@@ -1,4 +1,3 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @font-face {
     font-family: 'Telegraf', sans-serif;
     src: url('../CSSWENG-G1-1/Fonts/Telegraf/PPTelegraf-Regular.otf') format('opentype');
@@ -67,11 +66,24 @@ header .container {
 
 header p {
     font-weight: lighter;
+    font-size: small;
     margin: 0;
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 50px;
     margin-top: -10px;
     vertical-align: middle;
+}
+
+hr.solid {
+    border: none;
+    border-left: 1px solid black;
+    height: 50px;
+    width: 1px;
+    margin: 0 -182px;
+}
+
+.container {
+    margin-top: -10px;
 }
 
 .bg-half-gradient {
@@ -84,6 +96,7 @@ header p {
 .menu-icon {
     font-size: 24px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .welcome-title {
@@ -143,9 +156,9 @@ header p {
     position: relative;
     z-index: 20;
     border-radius: 1rem;
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
+    height: auto;
+    width: 90%;
+    padding: 5px;
     overflow: hidden;
     background-color: white;
     border: 1px solid transparent;
@@ -191,8 +204,10 @@ header p {
     margin-top: 1rem;
 }
 
-.card-description {
-    margin-top: 2rem;
+.card-text {
+    font-family: 'Garet', sans-serif;
+    font-weight: lighter;
+    margin-top: 1rem;
     color: #a0aec0;
     line-height: 1.5;
     font-size: 0.875rem;
@@ -371,14 +386,6 @@ html {
     text-decoration: none;
 }
 
-.dropdown-header {
-    text-align: center;
-    font-size: 1em;
-    color: #ddd;
-    background: #212531;
-    background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
-}
-
 .sidebar-nav .dropdown-menu {
     position: relative;
     width: 100%;
@@ -392,73 +399,6 @@ html {
 
 .dropdown-menu.show {
     top: 0;
-}
-
-
-/*ICONS for NAVBAR*/
-
-.nav.sidebar-nav li a::before {
-    content: "\f12e";
-    vertical-align: baseline;
-    display: inline-block;
-    padding-right: 5px;
-}
-
-a[href*="#dashboard"]::before {
-    content: "\f422" !important;
-}
-
-a[href*="#programs"]::before {
-    content: "\F227" !important;
-}
-
-a[href*="#events"]::before {
-    content: "\f073" !important;
-}
-
-a[href*="#events"]::before {
-    content: "\f073" !important;
-}
-
-a[href*="#team"]::before {
-    content: "\f0c0" !important;
-}
-
-a[href*="#works"]::before {
-    content: "\f0b1" !important;
-}
-
-a[href*="#pictures"]::before {
-    content: "\f03e" !important;
-}
-
-a[href*="#videos"]::before {
-    content: "\f03d" !important;
-}
-
-a[href*="#books"]::before {
-    content: "\f02d" !important;
-}
-
-a[href*="#art"]::before {
-    content: "\f1fc" !important;
-}
-
-a[href*="#awards"]::before {
-    content: "\f02e" !important;
-}
-
-a[href*="#services"]::before {
-    content: "\f013" !important;
-}
-
-a[href*="#contact"]::before {
-    content: "\f086" !important;
-}
-
-a[href*="#followme"]::before {
-    content: "<i class="fas fa-desktop"></i>" !important;
-    color: #0084b4;
 }
 
 
